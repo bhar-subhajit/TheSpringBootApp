@@ -1,0 +1,15 @@
+- name : ec2-launcher
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: launch ec2
+    ec2:
+     instance_type: t2.micro
+     key_name: sonarqube
+     image: ami-027cab9a7bf0155df
+     region: us-east-2
+     group: launch-wizard-2
+     count: 1
+     vpc_subnet_id: subnet-e780508c
+     wait: yes
+     assign_public_ip: yes 
