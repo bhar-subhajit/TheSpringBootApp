@@ -68,7 +68,7 @@ node {
       }
     }
     catch(err) {
-          mail bcc: '', body: "${err}", cc: '', from: '', replyTo: '', subject: 'Pipeline Failure', to: 'subhoanindian@gmail.com'
+          mail bcc: '', body: "${err}", cc: '', from: '', replyTo: '', subject: 'Attention !! Pipeline Failure (Springboot App)', to: 'subhoanindian@gmail.com'
     }
     
     
